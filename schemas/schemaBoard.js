@@ -26,6 +26,6 @@ const ownersSchema = Joi.object({
     }),
 });
 
-const boardsSchemas = { addBoardSchema, editBoardSchema, ownersSchema };
+const boardSchemas = { addBoardSchema, editBoardSchema, ownersSchema };
 
-export default boardsSchemas;
+export default boardSchemas;
