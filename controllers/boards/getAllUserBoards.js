@@ -2,7 +2,7 @@ import { Types } from "mongoose";
 
 import { Board } from "../../models/board.js";
 
-const getUserBoards = async (req, res) => {
+const getAllUserBoards = async (req, res) => {
   const { _id } = req.user;
   const objectId = Types.createFromTime(_id);
 
@@ -34,4 +34,4 @@ const getUserBoards = async (req, res) => {
   res.json(result);
 };
 
-export default getUserBoards;
+export default getAllUserBoards;
