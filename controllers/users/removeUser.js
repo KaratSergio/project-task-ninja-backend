@@ -1,10 +1,10 @@
-import { BadRequestError } from "../../helpers/BadRequestError.js";
-import { HttpError } from "../../helpers/HttpError.js";
+import BadRequestError from "../../helpers/BadRequestError.js";
+import HttpError from "../../helpers/HttpError.js";
 
-import { boardSchemas } from "../../schemas/schemaBoard.js";
+import boardSchemas from "../../schemas/schemaBoard.js";
 
-import { Board } from "../../models/board.js";
-import { User } from "../../models/user.js";
+import Board from "../../models/board.js";
+import User from "../../models/user.js";
 
 const removeUser = async (req, res) => {
   const { value, error } = boardSchemas.ownerSchema.validate(req.body, {

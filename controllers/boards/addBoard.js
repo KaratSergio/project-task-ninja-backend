@@ -1,6 +1,6 @@
-import { Board } from "../../models/board.js";
+import Board from "../../models/board.js";
 
-import { boardSchemas } from "../../schemas/schemaBoard.js";
+import boardSchemas from "../../schemas/schemaBoard.js";
 
 import BadRequestError from "../../helpers/BadRequestError.js";
 

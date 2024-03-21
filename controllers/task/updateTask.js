@@ -1,10 +1,10 @@
-import { Task } from "../../models/task.js";
-import { Column } from "../../models/column.js";
+import Task from "../../models/task.js";
+import Column from "../../models/column.js";
 
-import { taskSchemas } from "../../schemas/schemaTask.js";
+import taskSchemas from "../../schemas/schemaTask.js";
 
-import { HttpError } from "../../helpers/HttpError.js";
-import { BadRequestError } from "../../helpers/BadRequestError.js";
+import HttpError from "../../helpers/HttpError.js";
+import BadRequestError from "../../helpers/BadRequestError.js";
 
 const updateTask = async (req, res) => {
   const { value, error } = taskSchemas.updateTaskSchemas.validate(req.body, {

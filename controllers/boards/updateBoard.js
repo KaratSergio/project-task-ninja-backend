@@ -1,9 +1,9 @@
-import { Board } from "../../models/board.js";
+import Board from "../../models/board.js";
 
-import { boardSchemas } from "../../schemas/schemaBoard.js";
+import boardSchemas from "../../schemas/schemaBoard.js";
 
-import { HttpError } from "../../helpers/HttpError.js";
-import { BadRequestError } from "../../helpers/BadRequestError.js";
+import HttpError from "../../helpers/HttpError.js";
+import BadRequestError from "../../helpers/BadRequestError.js";
 
 const updateBoard = async (req, res) => {
   const { value, error } = boardSchemas.editBoardSchema.validate(req.body, {

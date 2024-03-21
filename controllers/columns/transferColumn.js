@@ -1,10 +1,10 @@
 import { Types } from " mongoose";
 
-import { Board } from "../../models/board.js";
+import Board from "../../models/board.js";
 
-import { transferSchema } from "../../schemas/schemaTransfer.js";
+import transferSchema from "../../schemas/schemaTransfer.js";
 
-import { BadRequestError } from "../../helpers/BadRequestError.js";
+import BadRequestError from "../../helpers/BadRequestError.js";
 
 const transferColumn = async (req, res) => {
   const { value, error } = transferSchema.validate(req.body, {

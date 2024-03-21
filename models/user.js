@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-import { handleMongooseError } from "../helpers";
+import handleMongooseError from "../helpers";
 
 import { themes } from "../constants/array.js";
 import { email, password } from "../constants/regExp.js";

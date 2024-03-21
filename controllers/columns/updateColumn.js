@@ -1,9 +1,9 @@
-import { BadRequestError } from "../../helpers/BadRequestError.js";
-import { HttpError } from "../../helpers/HttpError.js";
+import BadRequestError from "../../helpers/BadRequestError.js";
+import HttpError from "../../helpers/HttpError.js";
 
-import { columnSchemas } from "../../schemas/schemaColumn.js";
+import columnSchemas from "../../schemas/schemaColumn.js";
 
-import { Column } from "../../models/column.js";
+import Column from "../../models/column.js";
 
 const updateColumn = async (req, res) => {
   const { value, error } = columnSchemas.updateColumnSchema.validate(req.body, {

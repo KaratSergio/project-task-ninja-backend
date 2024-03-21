@@ -1,6 +1,6 @@
 import { Types } from "mongoose";
 
-import { Board } from "../../models/board.js";
+import Board from "../../models/board.js";
 
 const getAllUserBoards = async (req, res) => {
   const { _id } = req.user;

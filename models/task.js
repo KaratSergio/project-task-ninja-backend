@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-import { handleMongooseError } from "../helpers";
+import handleMongooseError from "../helpers";
 
 import { priorities } from "../constants/array.js";
 import { deadline } from "../constants/regExp.js";

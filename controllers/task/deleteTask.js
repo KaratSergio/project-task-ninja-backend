@@ -1,7 +1,7 @@
 import { Task } from "../../models/task.js";
-import { Column } from "../../models/column.js";
+import Column from "../../models/column.js";
 
-import { HttpError } from "../../helpers/HttpError.js";
+import HttpError from "../../helpers/HttpError.js";
 
 const deleteTask = async (req, res) => {
   const { id } = req.params;

@@ -1,8 +1,8 @@
 import { Types } from "mongoose";
 
-import { Board } from "../../models/board.js";
+import Board from "../../models/board.js";
 
-import { HttpError } from "../../helpers/HttpError.js";
+import HttpError from "../../helpers/HttpError.js";
 
 const getBoardById = async (res, req) => {
   const { id } = req.params;

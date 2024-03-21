@@ -1,8 +1,8 @@
-import { HttpError } from "../../helpers/HttpError.js";
+import HttpError from "../../helpers/HttpError.js";
 
-import { Task } from "../../models/task.js";
-import { Board } from "../../models/board.js";
-import { Column } from "../../models/column.js";
+import Task from "../../models/task.js";
+import Board from "../../models/board.js";
+import Column from "../../models/column.js";
 
 const deleteBoard = async (req, res) => {
   const { id } = req.params;
