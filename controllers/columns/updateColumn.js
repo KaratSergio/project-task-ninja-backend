@@ -6,7 +6,7 @@ import columnSchemas from "../../schemas/schemaColumn.js";
 import Column from "../../models/column.js";
 
 const updateColumn = async (req, res) => {
-  const { value, error } = columnSchemas.updateColumnSchema.validate(req.body, {
+  const { value, error } = columnSchemas.editColumnSchema.validate(req.body, {
     abortEarly: false,
   });
   if (error) BadRequestError(error);
