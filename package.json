@@ -1,6 +1,7 @@
 {
   "name": "project-task-ninja-backend",
   "version": "1.0.0",
+  "type": "module",
   "private": "true",
   "scripts": {
     "start": "cross-env NODE_ENV=production node ./server.js",
