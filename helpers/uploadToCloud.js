@@ -1,4 +1,5 @@
-import { v2 as cloudinary } from "cloudinary";
+import cloudinary from "cloudinary";
+const { v2 } = cloudinary;
 
 const uploadToCloud = async (req) => {
   const { _id } = req.user;

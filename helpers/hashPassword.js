@@ -13,4 +13,4 @@ const hashPasswordMiddleware = async (password) => {
   return hashedPassword;
 };
 
-export default { hashPassword, hashPasswordMiddleware };
+export { hashPassword, hashPasswordMiddleware };

@@ -1,4 +1,4 @@
-import { Task } from "../../models/task.js";
+import Task from "../../models/task.js";
 import Column from "../../models/column.js";
 
 import taskSchemas from "../../schemas/schemaTask.js";

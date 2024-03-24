@@ -1,14 +1,14 @@
 import Joi from "joi";
 
 import { themes } from "../constants/array.js";
-import { name, email, password } from "../constants/regExp";
+import { name, email, password } from "../constants/regExp.js";
 
 import {
   fieldRequired,
   nameInvalid,
   emailInvalid,
   passwordInvalid,
-} from "../constants/validMessage";
+} from "../constants/validMessage.js";
 
 const loginSchema = Joi.object({
   email: Joi.string()
@@ -71,7 +71,7 @@ const updateSchema = Joi.object({
 
 const updateTheme = Joi.object({
   theme: Joi.string()
-    .valid(themes)
+    .valid(...themes)
     .insensitive()
     .required()
     .messages({

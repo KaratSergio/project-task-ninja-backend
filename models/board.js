@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-import handleMongooseError from "../helpers";
+import handleMongooseError from "../helpers/handleMongooseError.js";
 
 import { icons, backgrounds } from "../constants/array.js";
 

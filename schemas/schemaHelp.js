@@ -2,7 +2,7 @@ import Joi from "joi";
 
 import { email } from "../constants/regExp.js";
 
-import { fieldRequired, emailInvalid } from "../constants/validMessage";
+import { fieldRequired, emailInvalid } from "../constants/validMessage.js";
 
 const helpSchema = Joi.object({
   email: Joi.string()

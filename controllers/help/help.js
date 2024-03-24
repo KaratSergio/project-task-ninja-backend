@@ -1,8 +1,8 @@
-import sendEmail from "../../helpers/sendEmail";
+import sendEmail from "../../helpers/sendEmail.js";
 
-import helpSchema from "../../schemas/schemaHelp";
+import helpSchema from "../../schemas/schemaHelp.js";
 
-import BadRequestError from "../../helpers/BadRequestError";
+import BadRequestError from "../../helpers/BadRequestError.js";
 
 const { SUPPORT_DEPARTMENT } = process.env;
 
